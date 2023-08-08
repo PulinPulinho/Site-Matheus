@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Matheus Castor</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            img{
+                width: 30%;
+                border-radius: 5%;
+                float: left;
+                margin-right: 3%;
+                margin-top: 1%;
+            }
+            p{
+                font-size: 200%;
+            }
+            .nome{
+                font-weight: bold;
+                font-size: 300%;
+            }
+            .arroba{
+                font-size: 200%;
+                font-weight: bold;
+            }
+            .descricao{
+                font-size: 150%;
+                font-weight: bold;
+            }
+            .foto_info{
+                background-color: aliceblue;
+                height: 40rem;
+            }
+            html, body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: rgb(236, 200, 171);
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.1rem 5rem;
+                background: linear-gradient(180deg, #9b4f1c 0%, #854c1e 100%);
+            }
+            .brand a {
+                text-decoration: none;
+                font-size: 200%;
+                font-weight: 600;
+                color: #ffff;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+
+            li{
+                list-style-type: none;
+                margin-left: 3rem;
+            }
+
+            li > a{
+                text-decoration: none;
+                color: #ffff;
+                font-size: 150%;
+                font-weight: 500;
+            }
+
+            li::after {
+                content:'';
+                width: 1rem;
+                height: 0.15rem;
+                background-color: #ffff;
+                display: block;
+                border-radius: 0.2rem;
+                margin: 0.2rem auto 0 auto;
+                transition: all 0.3s ease-in-out;
+            }
+
+            li:hover::after {
+                width: 2rem;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="brand"><a href="./index.html">Castor</a></div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./servicos.html">Serviços</a></li>
+                    <li><a href="./contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+
+        <div class="foto_info">
+            <img class="fotinho" src="matheus_foto.jpg" alt="Matheus Castor">
+
+            <p class="nome">Matheus Castor</p>
+            <p class="arroba"><a href="https://www.instagram.com/castordeazevedo/">@castordeazevedo</a></p>
+            <p class="descricao">📷✨Te ajudo a ser melhor vista(o).</p>
+            <p class="descricao">👉 Produtor executivo na <a href='https://www.instagram.com/apoloprodutora/'>@apoloprodutora</a></p>
+            <p class="descricao">🎓 10 anos no mercado.</p>
+            <p class="descricao">👇 Sites e Pacotes!</p>
+        </div>
+    </body>
+</html>
+
+
+
