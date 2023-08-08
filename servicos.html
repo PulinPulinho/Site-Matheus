@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Matheus Castor</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            html, body{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: rgb(236, 200, 171);
+            }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.1rem 5rem;
+                background: linear-gradient(180deg, #9b4f1c 0%, #854c1e 100%);
+            }
+            .brand a {
+                text-decoration: none;
+                font-size: 200%;
+                font-weight: 600;
+                color: #ffff;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+
+            li{
+                list-style-type: none;
+                margin-left: 3rem;
+            }
+
+            li > a{
+                text-decoration: none;
+                color: #ffff;
+                font-size: 150%;
+                font-weight: 500;
+            }
+
+            li::after {
+                content:'';
+                width: 1rem;
+                height: 0.15rem;
+                background-color: #ffff;
+                display: block;
+                border-radius: 0.2rem;
+                margin: 0.2rem auto 0 auto;
+                transition: all 0.3s ease-in-out;
+            }
+
+            li:hover::after {
+                width: 2rem;
+
+            }
+            /* Add some padding inside the card container */
+            .exemplo1 {
+                width: 90%;
+                margin: 5%;
+                border-radius: 3%;
+            }
+            .card {
+
+            margin: 5%;
+            /* Change background color */
+            background-color: white;
+
+            /* Add border */
+            border: 1px solid #bacdd8;
+
+            /* Add space between the border and the content */
+            padding: 8px;
+
+            border-radius: 12px;
+
+            width: 20%;
+
+            height: 70%;
+            }
+
+            /* Style div elements that have class equal to name */
+            .name {
+            font-size: 24px;
+            font-weight: 600;
+
+            margin-top: 16px;
+            }
+
+            /* Style p element */
+            p {
+            font-size: 14px;
+            color: #7f8c9b;
+            line-height: 150%;
+            }
+
+            /* Style button element */
+            button {
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+
+            font-weight: 600;
+            color: #0077ff;
+            background-color: #e0efff;
+
+            /* Button is inline-block element by default, it need to have block display for margin: 0 auto; to work */
+            margin: 0 auto;
+            display: block;
+
+            /* Button is a clickable element, therefore it should have a pointer cursor */
+            cursor: pointer;
+            }
+
+            .card__details {
+            /* Add space around the details */
+            padding: 16px 8px 8px 8px;
+            }
+            .preco{
+                font-size: 150%;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="brand"><a href="./index.html">Castor</a></div>
+
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./servicos.html">Serviços</a></li>
+                    <li><a href="./contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container">
+
+            <!-- A div with card class for the card  -->
+            <div class="card">
+              <img class="exemplo1" src="foto_exemplo1.jpg" alt="Lago di Braies">
+        
+              <!-- A div with card__details class to hold the details in the card  -->
+              <div class="card__details">
+        
+                <!-- A div with name class for the name of the card -->
+                <div class="name">Ensaio fotográfico</div>
+        
+                <p class="preco">R$500.00</p>
+                <hr>
+                <p>10 fotos editadas</p>
+                <p>+ 50 fotos não editadas</p>
+                <p>+ 2 reuniões de conceito e pesquisa</p>
+                <p>+ 1 reunião de pesquisa de figurino</p>
+
+
+        
+                <button>Read more</button>
+              </div>
+        
+        
+            </div>
+          </div>
+        
+        
+    </body>
+</html>
